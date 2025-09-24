@@ -12,7 +12,8 @@ Console.WriteLine("Voice Assistant MVP — push-to-talk (toggle).");
 Console.WriteLine("Press [SPACE] to start, press [SPACE] again to stop. Press [ESC] to quit.");
 
 var tts = new LocalTts();
-var ptt = new PushToTalkRecorder();
+//var ptt = new PushToTalkRecorder();
+var vad = new VoiceAssistantMvp.Audio.VadRecorder();
 
 // Resolve the Whisper model path (your .csproj copy rule drops it into bin/.../models/)
 string ResolveModelPath()
@@ -39,7 +40,8 @@ while (true)
         Console.Write("\nPress SPACE to start talking… ");
 
         // Records from first SPACE press until the next SPACE press.
-        var wavPath = await ptt.RecordUntilSpaceAgainAsync();
+        //var wavPath = await ptt.RecordUntilSpaceAgainAsync();
+        var wavPath = await vad.RecordWithVadAsync();
         Console.WriteLine("\nProcessing…");
 
         // Transcribe with Whisper

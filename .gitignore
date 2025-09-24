@@ -32,3 +32,6 @@ Thumbs.db
 # Whisper / LLM models
 models/*.bin
 models/*.gguf
+
+# Other
+*.tmp

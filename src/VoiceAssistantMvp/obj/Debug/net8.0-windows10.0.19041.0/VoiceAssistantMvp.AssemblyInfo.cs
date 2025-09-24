@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VoiceAssistantMvp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc752f825aa1245db1c40bc9d6253dfc70c374d7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aab704074f2203fbd3247c2c07ff7313dfa3b85e")]
 [assembly: System.Reflection.AssemblyProductAttribute("VoiceAssistantMvp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VoiceAssistantMvp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
