@@ -1,0 +1,30 @@
+
+# ---- Visual Studio / .NET ----
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+out/
+Debug/
+Release/
+publish/
+
+# NuGet (packages folder if used)
+packages/
+
+# Rider / JetBrains
+.idea/
+*.DotSettings.user
+_ReSharper*/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

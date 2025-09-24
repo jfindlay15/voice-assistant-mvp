@@ -1,0 +1,15 @@
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\bin\Debug\net10.0\VoiceAssistantMvp.exe
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\bin\Debug\net10.0\VoiceAssistantMvp.deps.json
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\bin\Debug\net10.0\VoiceAssistantMvp.runtimeconfig.json
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\bin\Debug\net10.0\VoiceAssistantMvp.dll
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\bin\Debug\net10.0\VoiceAssistantMvp.pdb
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.AssemblyInfoInputs.cache
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.AssemblyInfo.cs
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.csproj.CoreCompileInputs.cache
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.sourcelink.json
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.dll
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\refint\VoiceAssistantMvp.dll
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.pdb
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\VoiceAssistantMvp.genruntimeconfig.cache
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net10.0\ref\VoiceAssistantMvp.dll

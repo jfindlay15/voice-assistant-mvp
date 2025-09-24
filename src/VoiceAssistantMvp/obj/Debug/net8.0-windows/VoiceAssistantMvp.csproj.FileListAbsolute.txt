@@ -1,0 +1,5 @@
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net8.0-windows\VoiceAssistantMvp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net8.0-windows\VoiceAssistantMvp.AssemblyInfoInputs.cache
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net8.0-windows\VoiceAssistantMvp.AssemblyInfo.cs
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net8.0-windows\VoiceAssistantMvp.csproj.CoreCompileInputs.cache
+C:\Users\John Findlay\source\repos\voice-assistant-mvp\src\VoiceAssistantMvp\obj\Debug\net8.0-windows\VoiceAssistantMvp.sourcelink.json
