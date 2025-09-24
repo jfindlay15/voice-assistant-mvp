@@ -10,6 +10,8 @@
         "dependencies": {
           "NAudio": "2.2.1",
           "System.Windows.Extensions": "9.0.9",
+          "Whisper.net.Runtime": "1.8.1",
+          "Whisper.net": "1.8.1",
           "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.19041.56"
         },
         "runtime": {
@@ -138,7 +140,16 @@
             "fileVersion": "9.0.925.41916"
           }
         }
-      }
+      },
+      "Whisper.net/1.8.1": {
+        "runtime": {
+          "lib/net8.0/Whisper.net.dll": {
+            "assemblyVersion": "1.8.1.0",
+            "fileVersion": "1.8.1.0"
+          }
+        }
+      },
+      "Whisper.net.Runtime/1.8.1": {}
     }
   },
   "libraries": {
@@ -235,6 +246,20 @@
       "sha512": "sha512-9MXFp+CvnpqGSRx6FGlKHX5ztHmBi5BoZBnn1/p+NJ1qTLhkTnuszJ3jTOiydSE1y2XIKRLqmZEjiyCGBDrWkw==",
       "path": "system.windows.extensions/9.0.9",
       "hashPath": "system.windows.extensions.9.0.9.nupkg.sha512"
+    },
+    "Whisper.net/1.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NOcPlajorIQ5bIaf21PESirTvhCSb/T4qbUZreoU31jOu2W6kGJRgy+1f/M7PK/atcWXLF5FsXIj2lHi5sym1w==",
+      "path": "whisper.net/1.8.1",
+      "hashPath": "whisper.net.1.8.1.nupkg.sha512"
+    },
+    "Whisper.net.Runtime/1.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DW2JhlBbt0W5W+cIP8Uevt5+7XnjPIsG9b5FyAdeB9taNk9w1WFw9W7TYSNaqgyEbEHHPNOXA6hl+yrmBwOfsQ==",
+      "path": "whisper.net.runtime/1.8.1",
+      "hashPath": "whisper.net.runtime.1.8.1.nupkg.sha512"
     }
   }
 }

@@ -1,35 +1,45 @@
 ﻿using System.Media;
 using VoiceAssistantMvp.Audio;
+using VoiceAssistantMvp.Ai;
 using VoiceAssistantMvp.Speech;
 
-//
-// Entry point for the Voice Assistant MVP.
-// Right now this program only tests microphone recording and text-to-speech playback.
-//
-Console.WriteLine("Voice Assistant MVP — mic smoke test.");
+// Mic -> Whisper -> LLM -> TTS
+Console.WriteLine("Voice Assistant MVP — end-to-end loop.");
 
-// Initialize our Text-to-Speech (TTS) helper
 var tts = new LocalTts();
-
-// Use TTS to tell the user what will happen
-tts.Speak("I will record for three seconds. Please say something now.");
-
-// Initialize the microphone recorder
 var rec = new MicrophoneRecorder();
+var modelPath = Path.Combine(AppContext.BaseDirectory, "models", "ggml-small.en.bin");
 
-// Record 3 seconds of audio from the default system microphone.
-// The recorder saves the result as a temporary .wav file and returns its path.
+// Guard for model presence
+if (!File.Exists(modelPath))
+{
+    Console.WriteLine($"Model not found at: {modelPath}");
+    return;
+}
+
+var stt = new WhisperStt(modelPath);
+var llm = new LlmClient();
+
+tts.Speak("Hold on. I will record for three seconds.");
 var wavPath = rec.RecordSeconds(3);
 
-// Use TTS to announce playback
-tts.Speak("Playing back your recording.");
+var text = await stt.TranscribeAsync(wavPath);
+Console.WriteLine($"> You: {text}");
 
-// Playback the recorded .wav file using the built-in SoundPlayer
-using var player = new SoundPlayer(wavPath);
-player.Load();
-player.PlaySync();
+string reply;
+if (string.IsNullOrWhiteSpace(text))
+{
+    reply = "I didn't catch anything. Please try again a little louder.";
+}
+else
+{
+    reply = await llm.ChatAsync(text);
+}
+Console.WriteLine($"> Assistant: {reply}");
 
-// Clean up the temp file
-try { File.Delete(wavPath); } catch { /* ignore */ }
+tts.Speak(reply);
 
-Console.WriteLine("Mic test done.");
+// optional: hear your original audio
+using (var player = new SoundPlayer(wavPath)) { player.Load(); player.PlaySync(); }
+try { File.Delete(wavPath); } catch { }
+Console.WriteLine("Done.");
