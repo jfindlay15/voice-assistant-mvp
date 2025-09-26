@@ -187,5 +187,21 @@ Check your Windows output device and volume.
 
 ---
 
+
+## Run the Voice Assistant
+
+### 1) Start backend (API + Ollama)
+```powershell
+# from repo root (where docker-compose.yml lives)
+docker compose up -d --build
+
+# one-time: pull the model into the Ollama container
+docker compose exec ollama ollama pull llama3.1:8b
+
+# quick checks
+Invoke-WebRequest http://localhost:8080/health | % Content
+docker compose logs -f api
+
+
 ## Author
 John Findlay
