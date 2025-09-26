@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+.git
+.gitignore
+**/*.Secrets.json
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/*.pfx
+**/*.cer
+README.md

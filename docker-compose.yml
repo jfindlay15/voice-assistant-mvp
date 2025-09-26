@@ -1,0 +1,28 @@
+services:
+  app:
+    build:
+      context: ./src/VoiceAssistantMvp   # <-- project directory as context
+    image: voice-assistant-mvp:dev
+  api:
+    build:
+      context: ./src/VoiceAssistant.Api   # <-- project directory as context
+    image: voice-assistant-api:dev
+    ports:
+      - "8080:8080"
+    environment:
+      LLM__BASE_URL: ${LLM__BASE_URL:-http://ollama:11434}
+      LLM__MODEL: llama3.1:8b
+      LLM_TEMP: ${LLM_TEMP:-0.7}
+    depends_on:
+      - ollama
+    
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama:
